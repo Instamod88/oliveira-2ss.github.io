@@ -1,43 +1,158 @@
-.treino-box {
+/* Fundo e corpo */
+body {
+  background: linear-gradient(120deg, #0d0d0d, #1a1a1a);
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  padding: 30px;
+  background: #111;
+  border-bottom: 3px solid #ff004c;
+  box-shadow: 0 4px 20px rgba(255,0,76,0.5);
+}
+
+header h1 {
+  font-size: 2.8em;
+  color: #ff004c;
+  text-shadow: 0 0 10px #ff004c;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+/* Seções principais */
+section {
+  margin: 30px auto;
+  background: rgba(20, 20, 20, 0.9);
+  padding: 25px;
+  border-radius: 12px;
+  border: 2px solid #ff004c;
+  max-width: 900px;
+  box-shadow: 0 0 20px rgba(255,0,76,0.3);
+}
+
+/* Labels e inputs */
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, select, textarea, button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
   background: #222;
+  color: #fff;
+  border: 1px solid #ff004c;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+/* Botões */
+button {
+  margin-top: 15px;
+  background: #ff004c;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff3366;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff004c;
+}
+
+/* Resultados de treino */
+.treino-box {
+  background: #1a1a1a;
   border: 2px solid #ff004c;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 12px;
   margin-top: 20px;
+  box-shadow: 0 0 20px rgba(255,0,76,0.5);
+  transition: 0.3s;
+}
+
+.treino-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(255,0,76,0.8);
 }
 
 .treino-box h2 {
   color: #ff004c;
+  text-shadow: 0 0 10px #ff004c;
 }
 
 .treino-box ol li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  font-size: 1.05em;
 }
 
-.treino-box p {
-  margin: 5px 0;
-  line-height: 1.4;
-}.redes-sociais {
+/* Comentários */
+.comentarios {
+  background: #1a1a1a;
+  border: 2px solid #ff004c;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255,0,76,0.4);
+}
+
+#listaComentarios div {
+  background: #222;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border-left: 4px solid #ff004c;
+}
+
+/* Redes sociais */
+.redes-sociais {
   text-align: center;
   margin-top: 40px;
-  padding: 20px;
+  padding: 25px;
   background: #111;
   border: 2px solid #ff004c;
-  border-radius: 8px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255,0,76,0.5);
 }
 
 .redes-sociais h2 {
   color: #ff004c;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #ff004c;
 }
 
 .icone-redes {
-  width: 50px;
-  height: 50px;
-  margin: 0 10px;
-  transition: transform 0.2s;
+  width: 60px;
+  height: 60px;
+  margin: 0 15px;
+  transition: transform 0.2s, box-shadow 0.3s;
 }
 
 .icone-redes:hover {
-  transform: scale(1.2);
+  transform: scale(1.3) rotate(5deg);
+  box-shadow: 0 0 20px #ff004c;
+}
+
+/* Responsividade */
+@media(max-width: 600px){
+  .treino-box, .redes-sociais, section {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .icone-redes {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+  }
 }
