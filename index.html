@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>FF Aim Sensi – Auxílio de Mira</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>FF AIM SENSI</h1>
+  <p>Auxílio de mira inteligente (sem hack, sem ban)</p>
+</header>
+
+<main>
+  <section class="config">
+    <h2>Configuração</h2>
+
+    <label>Marca do celular</label>
+    <select id="marca"></select>
+
+    <label>Modelo</label>
+    <select id="modelo"></select>
+
+    <label>DPI do celular</label>
+    <input type="number" id="dpi" value="400">
+
+    <label>Estilo de puxada</label>
+    <select id="puxada">
+      <option value="leve">Leve</option>
+      <option value="media">Média</option>
+      <option value="agressiva">Agressiva</option>
+    </select>
+
+    <label>Problema principal</label>
+    <select id="problema">
+      <option value="passa">Passa da cabeça</option>
+      <option value="naosobe">Não sobe</option>
+      <option value="instavel">Capa inconsistente</option>
+    </select>
+
+    <button onclick="gerarSensi()">Gerar Sensibilidade</button>
+  </section>
+
+  <section class="resultado" id="resultado"></section>
+
+  <section class="comentarios">
+    <h2>Comentários da Comunidade</h2>
+    <textarea id="comentarioTexto" placeholder="Escreva sua experiência..."></textarea>
+    <button onclick="enviarComentario()">Enviar</button>
+    <div id="listaComentarios"></div>
+  </section>
+</main>
+
+<script src="devices.js"></script>
+<script src="sensi-engine.js"></script>
+<script src="comentarios.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
