@@ -13,4 +13,4 @@ function gerarSensi() {
     4x: ${sensi.mira4x}<br>
     AWM: ${sensi.awm}
   `;
-}
+} 
