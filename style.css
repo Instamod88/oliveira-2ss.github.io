@@ -1,48 +1,20 @@
-body {
-  background: #0e0e0e;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  margin: 0;
-}
-
-header {
-  text-align: center;
-  padding: 20px;
-  background: #111;
-}
-
-main {
-  padding: 20px;
-}
-
-section {
-  margin-bottom: 30px;
-  background: #1a1a1a;
+.treino-box {
+  background: #222;
+  border: 2px solid #ff004c;
   padding: 20px;
   border-radius: 8px;
+  margin-top: 20px;
 }
 
-label {
-  display: block;
-  margin-top: 10px;
+.treino-box h2 {
+  color: #ff004c;
 }
 
-input, select, textarea, button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  background: #222;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
+.treino-box ol li {
+  margin-bottom: 8px;
 }
 
-button {
-  margin-top: 15px;
-  background: #ff004c;
-  cursor: pointer;
-}
-
-button:hover {
-  opacity: 0.8;
+.treino-box p {
+  margin: 5px 0;
+  line-height: 1.4;
 }
