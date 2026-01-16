@@ -155,4 +155,23 @@ button:hover {
     height: 50px;
     margin: 0 10px;
   }
+}/* Estilo transparente para os menus de celular */
+#marca, #modelo {
+  background: rgba(50, 50, 50, 0.6); /* fundo cinza semi-transparente */
+  color: #fff;                         /* cor do texto */
+  border: 1px solid #ff004c;           /* borda vermelha */
+  border-radius: 6px;                   /* cantos arredondados */
+  padding: 10px;
+  font-size: 1em;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+/* Efeito hover/focus para deixar o fundo mais visível */
+#marca:hover, #modelo:hover, #marca:focus, #modelo:focus {
+  background: rgba(50, 50, 50, 0.8);
+  outline: none;
+  border-color: #ff3366;
 }
