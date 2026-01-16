@@ -195,8 +195,6 @@ button {
   .social-circle span {
     font-size: 0.9rem;
   }
-}
-
 @media (min-width: 481px) and (max-width: 768px) {
   .container {
     max-width: 520px;
