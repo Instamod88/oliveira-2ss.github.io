@@ -1,85 +1,63 @@
-<!DOCTYPE html>
+><!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>FF Aim Sensi – Auxílio de Mira</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FF AIM Trainer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>FF AIM SENSI</h1>
-  <p>Auxílio de mira inteligente (sem hack, sem ban)</p>
-</header>
+  <!-- CABEÇALHO -->
+  <header>
+    <h1>🔥 Free Fire AIM Trainer</h1>
+    <p>Treine sua mira, escolha celular e acompanhe dicas profissionais</p>
+  </header>
 
-<main>
-  <section class="config">
-    <h2>Configuração</h2>
+  <!-- TREINOS -->
+  <section class="treinos">
+    <h2>🎯 Treinos de Mira</h2>
+    <button onclick="iniciarTreino('iniciante')">Treino Iniciante</button>
+    <button onclick="iniciarTreino('intermediario')">Treino Intermediário</button>
+    <button onclick="iniciarTreino('avancado')">Treino Avançado</button>
+    <div id="resultado"></div>
+  </section>
 
-    <label>Marca do celular</label>
+  <!-- SELEÇÃO DE CELULAR -->
+  <section class="selecionar-celular">
+    <h2>📱 Selecione seu celular</h2>
+    <label for="marca">Marca do celular</label>
     <select id="marca"></select>
 
-    <label>Modelo</label>
+    <label for="modelo">Modelo do celular</label>
     <select id="modelo"></select>
-
-    <label>DPI do celular</label>
-    <input type="number" id="dpi" value="400">
-
-    <label>Estilo de puxada</label>
-    <select id="puxada">
-      <option value="leve">Leve</option>
-      <option value="media">Média</option>
-      <option value="agressiva">Agressiva</option>
-    </select>
-
-    <label>Problema principal</label>
-    <select id="problema">
-      <option value="passa">Passa da cabeça</option>
-      <option value="naosobe">Não sobe</option>
-      <option value="instavel">Capa inconsistente</option>
-    </select>
-
-    <button onclick="gerarSensi()">Gerar Sensibilidade</button>
   </section>
 
-  <section class="resultado" id="resultado"></section>
-<section class="treinos">
-  <h2>🎯 Treinos de Mira</h2>
-
-  <button onclick="iniciarTreino('iniciante')">
-    Treino Iniciante
-  </button>
-
-  <button onclick="iniciarTreino('intermediario')">
-    Treino Intermediário
-  </button>
-
-  <button onclick="iniciarTreino('avancado')">
-    Treino Avançado
-  </button>
-</section>
+  <!-- COMENTÁRIOS -->
   <section class="comentarios">
-    <h2>Comentários da Comunidade</h2>
-    <textarea id="comentarioTexto" placeholder="Escreva sua experiência..."></textarea>
-    <button onclick="enviarComentario()">Enviar</button>
+    <h2>💬 Comentários</h2>
+    <textarea id="novoComentario" placeholder="Escreva seu comentário..."></textarea>
+    <button onclick="adicionarComentario()">Enviar</button>
     <div id="listaComentarios"></div>
   </section>
-  <section class="redes-sociais">
-  <h2>📱 Siga-me nas redes</h2>
-  <a href="https://www.instagram.com/_oliveira.2ss?igsh=MXIxaHRybzFmbDV2Nw%3D%3D&utm_source=qr" target="_blank">
-    <img src="instagram.png" alt="Instagram" class="icone-redes">
-  </a>
-  <a href="https://www.tiktok.com/@oliveira.2ss?_r=1&_t=ZS-937O0FiqcLQ" target="_blank">
-    <img src="tiktok.png" alt="TikTok" class="icone-redes">
-  </a>
-</section>
-</main>
 
-<script src="devices.js"></script>
-<script src="sensi-engine.js"></script>
-<script src="treino.js"></script>
-<script src="comentarios.js"></script>
-<script src="app.js"></script>
+  <!-- REDES SOCIAIS -->
+  <section class="redes-sociais">
+    <h2>📲 Siga-me nas redes</h2>
+    <a href="https://www.instagram.com/_oliveira.2ss?igsh=MXIxaHRybzFmbDV2Nw%3D%3D&utm_source=qr" target="_blank">
+      <img src="instagram.png" alt="Instagram" class="icone-redes">
+    </a>
+    <a href="https://www.tiktok.com/@oliveira.2ss?_r=1&_t=ZS-937O0FiqcLQ" target="_blank">
+      <img src="tiktok.png" alt="TikTok" class="icone-redes">
+    </a>
+  </section>
+
+  <!-- SCRIPTS -->
+  <script src="devices.js"></script>
+  <script src="treino.js"></script>
+  <script src="comentarios.js"></script>
+  <script src="app.js"></script>
 
 </body>
 </html>
