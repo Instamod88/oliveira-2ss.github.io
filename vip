@@ -159,7 +159,64 @@ button {
 .social-item a {
   color: #7fd8ff;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: bold;/* ============================= */
+/* 📱 RESPONSIVIDADE TOTAL */
+/* ============================= */
+
+@media (max-width: 480px) {
+  .container {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  select, button {
+    padding: 14px;
+    font-size: 1rem;
+  }
+
+  #resultado {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .social-circle {
+    width: 140px;
+    height: 140px;
+  }
+
+  .social-circle a {
+    font-size: 1.6rem;
+  }
+
+  .social-circle span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 520px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .social-circle {
+    width: 155px;
+    height: 155px;
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    max-width: 600px;
+  }
+}
 }
 </style>
 </head>
